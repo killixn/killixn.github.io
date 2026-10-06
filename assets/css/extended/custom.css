@@ -1,0 +1,77 @@
+/* ============================================================
+   MainRed  : #B3122B
+   DarkRed  : #7A0C1A
+   ============================================================ */
+
+:root {
+    --accent:       #B3122B;
+    --accent-dark:  #7A0C1A;
+    --accent-alpha: rgba(179, 18, 43, 0.12);
+}
+
+/* --- Liens ------------------------------------------------- */
+.post-content a,
+.post-single a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-alpha);
+    transition: border-color 0.15s;
+}
+.post-content a:hover,
+.post-single a:hover {
+    color: var(--accent-dark);
+    border-bottom-color: var(--accent-dark);
+}
+
+/* --- Titres de posts dans la liste ------------------------- */
+.post-entry:hover .entry-header h2 {
+    color: var(--accent);
+}
+
+/* --- Tags -------------------------------------------------- */
+.post-tags a {
+    border:     1px solid var(--accent);
+    color:      var(--accent) !important;
+    background: transparent;
+    transition: background 0.15s, color 0.15s;
+}
+.post-tags a:hover {
+    background: var(--accent) !important;
+    color:      #fff !important;
+}
+
+/* --- Logo / titre site dans la nav ------------------------- */
+.logo a:hover {
+    color: var(--accent) !important;
+}
+
+/* --- Trait horizontal (hr / divider) ----------------------- */
+hr {
+    border-color: var(--accent-alpha);
+}
+
+/* --- Table des matieres : lien actif ----------------------- */
+.toc a:hover {
+    color: var(--accent);
+}
+
+/* --- Bouton de copie de code ------------------------------- */
+.copy-code {
+    background: var(--accent-dark) !important;
+}
+
+/* --- Pagination : page active ------------------------------ */
+.pagination .page-item.active .page-link {
+    background:   var(--accent);
+    border-color: var(--accent);
+}
+
+/* --- Blocs de code ----------------------------------------- */
+.dark .highlight pre {
+    border-left: 3px solid var(--accent-dark);
+}
+
+/* --- Fil d'Ariane ------------------------------------------ */
+.breadcrumbs a:hover {
+    color: var(--accent);
+}

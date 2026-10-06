@@ -1,0 +1,75 @@
+baseURL = "https://killixn.github.io/"
+languageCode = "fr-FR"
+title = "killixn"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+enableEmoji = true
+
+[params]
+  author = "killixn"
+  description = "Cybersecurite - Systemes - Bas niveau"
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = true
+
+[params.homeInfoParams]
+  Title = "killixn"
+  Content = "Eleve-ingenieur EPITA - Cybersecurite & Systemes.  \nReverse engineering - Exploitation binaire - Developpement bas niveau."
+
+[[params.socialIcons]]
+  name = "github"
+  url  = "https://github.com/killixn"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[[menu.main]]
+  identifier = "posts"
+  name       = "Posts"
+  url        = "/posts/"
+  weight     = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name       = "Tags"
+  url        = "/tags/"
+  weight     = 20
+
+[[menu.main]]
+  identifier = "search"
+  name       = "Recherche"
+  url        = "/search/"
+  weight     = 30
+
+[markup.highlight]
+  noClasses         = false
+  anchorLineNos     = false
+  codeFences        = true
+  guessSyntax       = true
+  lineNos           = true
+  lineNumbersInTable = true
+  style             = "monokai"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
